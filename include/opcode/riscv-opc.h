@@ -21,6 +21,10 @@
 #ifndef RISCV_ENCODING_H
 #define RISCV_ENCODING_H
 /* Instruction opcode macros.  */
+#define MATCH_LAYCONF 0xb
+#define MASK_LAYCONF 0x7f
+#define MATCH_TILECONF 0x2b
+#define MASK_TILECONF 0x7f
 #define MATCH_SLLI_RV32 0x1013
 #define MASK_SLLI_RV32  0xfe00707f
 #define MATCH_SRLI_RV32 0x5013
