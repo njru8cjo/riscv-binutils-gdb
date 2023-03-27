@@ -299,8 +299,6 @@ const struct riscv_opcode riscv_opcodes[] =
 {"jump",        0, INSN_CLASS_I, "c,s",       0, (int) M_CALL, match_never, INSN_MACRO },
 {"nop",         0, INSN_CLASS_C, "",          MATCH_C_ADDI, 0xffff, match_opcode, INSN_ALIAS },
 {"nop",         0, INSN_CLASS_I, "",          MATCH_ADDI, MASK_ADDI|MASK_RD|MASK_RS1|MASK_IMM, match_opcode, INSN_ALIAS },
-{"layconf",     0, INSN_CLASS_I, "d,u",       MATCH_LAYCONF, MASK_LAYCONF, match_opcode, 0 }, 
-{"tileconf",    0, INSN_CLASS_I, "d,u",       MATCH_TILECONF, MASK_TILECONF, match_opcode, 0 },
 {"lui",         0, INSN_CLASS_C, "d,Cu",      MATCH_C_LUI, MASK_C_LUI, match_c_lui, INSN_ALIAS },
 {"lui",         0, INSN_CLASS_I, "d,u",       MATCH_LUI, MASK_LUI, match_opcode, 0 },
 {"li",          0, INSN_CLASS_C, "d,Cv",      MATCH_C_LUI, MASK_C_LUI, match_c_lui, INSN_ALIAS },
