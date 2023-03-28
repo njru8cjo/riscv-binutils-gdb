@@ -21,6 +21,8 @@
 #ifndef RISCV_ENCODING_H
 #define RISCV_ENCODING_H
 /* Instruction opcode macros.  */
+#define MATCH_SW_ACTIVE_NONE 0xb
+#define MASK_SW_ACTIVE_NONE  0x707f
 #define MATCH_SW_ACTIVE_OR 0x200b
 #define MASK_SW_ACTIVE_OR  0x707f
 #define MATCH_SW_ACTIVE_AND 0x300b
